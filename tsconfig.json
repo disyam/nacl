@@ -1,0 +1,4 @@
+{
+  "include": ["index.ts"],
+  "extends": "@tsconfig/node16/tsconfig.json"
+}

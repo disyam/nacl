@@ -1,0 +1,27 @@
+{
+  "name": "poc-nacl",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.ts",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/disyam/poc-nacl.git"
+  },
+  "author": "disyam.adityana@gmail.com",
+  "license": "MIT",
+  "devDependencies": {
+    "@tsconfig/node16": "~1.0.3",
+    "@types/node": "~18.6.1",
+    "nodemon": "~2.0.19",
+    "ts-node": "~10.9.1",
+    "typescript": "~4.7.4"
+  },
+  "dependencies": {
+    "tweetnacl": "~1.0.3",
+    "tweetnacl-util": "~0.15.1"
+  }
+}
