@@ -30,7 +30,6 @@ function decrypt() {
   }
 }
 
-const exist = fs.existsSync("plain.txt");
 if (!fs.existsSync("plain.txt")) {
   fs.writeFileSync("plain.txt", new Date().toISOString());
 }
