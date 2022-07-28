@@ -1,9 +1,11 @@
 import fs from "fs";
-import { hash, randomBytes, secretbox } from "tweetnacl";
-import { decodeUTF8, encodeUTF8 } from "tweetnacl-util";
+import { createHash } from "crypto";
 
-const secret = "1234567890";
-const key = hash(decodeUTF8(secret)).slice(0, 32);
+import { randomBytes, secretbox } from "tweetnacl";
+import { encodeUTF8 } from "tweetnacl-util";
+
+const secret = "1234567890abcdef" + "48aa6da8-0409-4896-91c4-005d73694ae1";
+const key = createHash("sha256").update(secret).digest();
 
 function encrypt() {
   const nonce = randomBytes(secretbox.nonceLength);
