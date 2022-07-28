@@ -1,4 +1,7 @@
 node_modules
+.env
 index.js
 plain.txt
 cipher.txt
+decrypt.js
+image.jpg
